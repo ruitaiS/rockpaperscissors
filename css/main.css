@@ -33,11 +33,16 @@ button img{
 
     width: 100%;
     height: 200px;
-    border-radius: 25px;
 
-    background-color: #383276;
+    background-color: transparent;
     
 
+}
+
+#middle{
+    width: 100%;
+    height: 500px;
+    background-color: #AA7D39;
 }
 
 #board{
@@ -52,7 +57,7 @@ button img{
     width: 750px;
     border-radius: 25px;
 
-    background-color: #AAA339;
+    background-color: #383276;
 }
 
 
