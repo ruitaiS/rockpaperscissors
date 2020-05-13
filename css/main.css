@@ -21,6 +21,10 @@ button{
   
 }
 
+button img{
+    transform: translate(0, 5%);
+}
+
 .choicebar{
     display: flex;
     flex-direction: row;
