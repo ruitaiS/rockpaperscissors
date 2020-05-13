@@ -16,7 +16,7 @@ button{
     width: 125px;
     vertical-align: middle;
     text-align: center;
-    background-color: green;
+    background-color: #D4AB6A;
     border-radius: 10px;
   
 }
@@ -35,7 +35,7 @@ button img{
     height: 200px;
     border-radius: 25px;
 
-    background-color: black;
+    background-color: #383276;
     
 
 }
@@ -52,7 +52,7 @@ button img{
     width: 750px;
     border-radius: 25px;
 
-    background-color: gray;
+    background-color: #AAA339;
 }
 
 
