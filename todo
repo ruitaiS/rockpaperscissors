@@ -2,6 +2,8 @@ add score keeper
 
 add thing that shows what the AI is picking
 
-add reset button
+newline characters don't work for the generated response text for whatever reason
 
-add credits button
+timeout code doesn't work for hey()
+
+potentially add some kind of button down behavior that times out (once you figure out how timeout works..)

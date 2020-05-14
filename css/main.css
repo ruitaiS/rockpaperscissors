@@ -1,3 +1,10 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 body{
     margin: 0;
     font-family: "Pangolin";
@@ -41,6 +48,9 @@ button img{
 }
 
 #middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
     height: 500px;
     background-color: #70dde2;
@@ -59,6 +69,14 @@ button img{
     border-radius: 25px;
 
     background-color: #e498b4;
+}
+
+#infolinks{
+    display: flex;
+    justify-content: flex-end;
+    width: 500px;
+    height: 40px;
+    align-items: center;
 }
 
 
