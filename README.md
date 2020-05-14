@@ -1,8 +1,6 @@
-Rock Paper Scissors game I made as part of the Odin Project.
+This is a Rock-Paper-Scissors game I made as part of the Odin Project.
 
-The original color scheme I picked out was absolutely disgusting. I really need to thank my friend Penelope for picking out a different one for me - it completely changed the personality of the game and everything else just sort of fell into place after that.
-
-
+The biggest takeaway I had from this was how much the color palette can change the tone of a webpage. The original color scheme was atrocious. I really need to thank my friend Penelope for picking out a different one for me - it instantly gave the game a much more playful personality, and everything else just sort of fell into place after that.
 
 
 Credits:
