@@ -5,6 +5,7 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
+    background-color: #22545f;
 }
 
 button{
@@ -16,7 +17,7 @@ button{
     width: 125px;
     vertical-align: middle;
     text-align: center;
-    background-color: #D4AB6A;
+    background-color: #e2bfab;
     border-radius: 10px;
   
 }
@@ -42,7 +43,7 @@ button img{
 #middle{
     width: 100%;
     height: 500px;
-    background-color: #AA7D39;
+    background-color: #70dde2;
 }
 
 #board{
@@ -57,7 +58,7 @@ button img{
     width: 750px;
     border-radius: 25px;
 
-    background-color: #383276;
+    background-color: #e498b4;
 }
 
 
