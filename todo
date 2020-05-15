@@ -7,3 +7,7 @@ newline characters don't work for the generated response text for whatever reaso
 timeout code doesn't work for hey()
 
 potentially add some kind of button down behavior that times out (once you figure out how timeout works..)
+
+change "about" to "back" and also the behavior so that you can go back from the about page without starting a game or hitting reset
+
+

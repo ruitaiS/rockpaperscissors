@@ -43,9 +43,8 @@ button img{
     height: 200px;
 
     background-color: transparent;
-    
-
 }
+
 
 #middle{
     display: flex;
@@ -54,6 +53,15 @@ button img{
     width: 100%;
     height: 500px;
     background-color: #70dde2;
+}
+
+#scorebar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
 }
 
 #board{

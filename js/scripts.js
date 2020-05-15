@@ -1,4 +1,5 @@
-document.getElementById("message").innerHTML = "yo";
+let myScore = 0;
+let yourScore = 0;
 
 
 
@@ -17,13 +18,17 @@ function hey(){
 };
 
 function about(){
-    say("It's rock paper scissors! What more is there to say??\nIcons by Cristiano Zouacs from the Noun Project.\nColor scheme by Penelope Fung.");
+    say("It's rock paper scissors! What more is there to say??\n \nIcons by Cristiano Zouacs from the Noun Project.\n \nColor scheme by Penelope Fung.");
 
     //add code to reset the counter when the counter is added
 };
 
 function reset(){
-    say("");
+    myScore = 0;
+    yourScore = 0;
+    say("Beep boop.");
+    document.getElementById("myscore").innerHTML = "";
+    document.getElementById("yourscore").innerHTML = "";
 };
 
 function getRndInteger(min, max) {
@@ -49,7 +54,12 @@ function press(user){
         say(decodeMove(user) +" and " + decodeMove(ai) + "!\n It's a Tie!");
     }else if ((user-ai == -2) || (user-ai == 1)){
         say(decodeMove(user) +" beats " + decodeMove(ai) + "!\n You Win!");
+        yourScore += 1;
     }else{
         say(decodeMove(ai) + " beats " + decodeMove(user) + "!\n You Lose!");
+        myScore += 1;
     };
+
+    document.getElementById("myscore").innerHTML = "Me: " + myScore;
+    document.getElementById("yourscore").innerHTML = "You: " + yourScore;
 };
