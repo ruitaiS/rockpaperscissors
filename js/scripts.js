@@ -13,8 +13,8 @@ say("How about a game?");
 function hey(){
     say("Hey! Stay on Your Side!");
     
-    //timeout doesn't seem to work if you pass a variable to the inner function
-    //setTimeout(reset, 3000);
+    //timeout for whatever reason passes the third parameter to the callback
+    setTimeout(say, 3000, "");
 
 };
 
@@ -48,9 +48,12 @@ function reset(){
     resetIcons();
     myScore = 0;
     yourScore = 0;
-    say("Beep boop.");
     document.getElementById("myscore").innerHTML = "";
     document.getElementById("yourscore").innerHTML = "";
+
+    say("Beep boop.");
+    setTimeout(say, 750, "");
+    setTimeout(say, 2750, "Another game?");
 };
 
 function getRndInteger(min, max) {

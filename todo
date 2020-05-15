@@ -1,5 +1,3 @@
-!timeout function won't work if you try to send values to the callback
-
 newline characters don't work for the generated response text for whatever reason
 
 reset button down behavior after time out (once you figure out how timeout works..)
