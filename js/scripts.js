@@ -12,6 +12,8 @@ function say(msg){
 say("How about a game?");
 
 function hey(){
+    clearTimeout(T1);
+    clearTimeout(T2);
     resetIcons();
     say("Hey! Stay on Your Side!");
     
