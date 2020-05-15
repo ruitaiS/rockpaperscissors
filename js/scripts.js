@@ -19,11 +19,23 @@ function hey(){
 
 function about(){
     say("It's rock paper scissors! What more is there to say??\n \nIcons by Cristiano Zouacs from the Noun Project.\n \nColor scheme by Penelope Fung.");
-
-    //add code to reset the counter when the counter is added
 };
 
+function resetIcons(){
+//Reset the icons from being white
+
+document.getElementById("myRock").src="./img/rock.png";
+document.getElementById("myPaper").src="./img/paper.png";
+document.getElementById("myScissors").src="./img/scissors.png";
+
+document.getElementById("yourRock").src="./img/rock.png";
+document.getElementById("yourPaper").src="./img/paper.png";
+document.getElementById("yourScissors").src="./img/scissors.png";
+
+}
+
 function reset(){
+    resetIcons();
     myScore = 0;
     yourScore = 0;
     say("Beep boop.");
@@ -35,12 +47,17 @@ function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
 };
 
-function decodeMove(n){
+function decodeMove(n, whose){
+    
+    resetIcons();
     if (n == 1){
+        document.getElementById(whose+"Rock").src="./img/whiterock.png";
         return "Rock";
     }else if (n == 2){
+        document.getElementById(whose+"Paper").src="./img/whitepaper.png";
         return "Paper";
     }else{
+        document.getElementById(whose+"Scissors").src="./img/whitescissors.png";
         return "Scissors";
     };
 };
@@ -51,12 +68,12 @@ function press(user){
 
 
     if (user==ai){
-        say(decodeMove(user) +" and " + decodeMove(ai) + "!\n It's a Tie!");
+        say(decodeMove(user, "your") +" and " + decodeMove(ai, "my") + "!\n It's a Tie!");
     }else if ((user-ai == -2) || (user-ai == 1)){
-        say(decodeMove(user) +" beats " + decodeMove(ai) + "!\n You Win!");
+        say(decodeMove(user, "your") +" beats " + decodeMove(ai, "my") + "!\n You Win!");
         yourScore += 1;
     }else{
-        say(decodeMove(ai) + " beats " + decodeMove(user) + "!\n You Lose!");
+        say(decodeMove(ai, "your") + " beats " + decodeMove(user, "my") + "!\n You Lose!");
         myScore += 1;
     };
 

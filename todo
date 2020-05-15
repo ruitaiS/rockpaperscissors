@@ -1,6 +1,7 @@
-add score keeper
-
-add thing that shows what the AI is picking
+!really strange behavior:
+    AI rarely picks paper when you pick rock continuously
+    Sometimes it displays paper when the AI picked scissors
+    User icons don't change
 
 newline characters don't work for the generated response text for whatever reason
 
