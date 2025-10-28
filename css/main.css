@@ -42,6 +42,16 @@ button img{
     z-index: 1000;
 }
 
+.back a {
+    text-decoration: none;
+    color: black;
+}
+
+.back a:hover {
+    text-decoration: underline;
+    color: #444;
+}
+
 .choicebar{
     display: flex;
     flex-direction: row;
