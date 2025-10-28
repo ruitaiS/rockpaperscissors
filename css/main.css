@@ -31,6 +31,17 @@ button img{
     transform: translate(0, 5%);
 }
 
+.back {
+    background-color: #e2bfab;
+    font-size: 25px;
+    border-radius: 5px;
+    padding: 0 5px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
 .choicebar{
     display: flex;
     flex-direction: row;
